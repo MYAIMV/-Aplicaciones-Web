@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación web para gestionar tareas personales">
+    <title>M&M</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestor de Tareas Personales</h1>
+    </header>
+
+
+    
+    <main>
+        <section id="form-section">
+            <h2>Agregar nueva tarea</h2>
+            <form id="taskForm">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="fecha">Fecha límite:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad" name="prioridad" required>
+                    <option value="">Selecciona</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <button type="submit">Agregar tarea</button>
+            </form>
+
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+
+        <section id="lista-section">
+            <h2>Lista de tareas</h2>
+            <ul id="listaTareas"></ul>
+        </section>
+    </main>
+    <script src="/JAVASCRIPT/script.js"></script>
+</body>
+</html>
